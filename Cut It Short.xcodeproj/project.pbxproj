@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		494EBEB12C568F9300814E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBEB02C568F9300814E41 /* AppDelegate.swift */; };
 		494EBEB32C568F9300814E41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBEB22C568F9300814E41 /* SceneDelegate.swift */; };
-		494EBEB52C568F9300814E41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBEB42C568F9300814E41 /* ViewController.swift */; };
-		494EBEB82C568F9300814E41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 494EBEB72C568F9300814E41 /* Base */; };
+		494EBEB52C568F9300814E41 /* AskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBEB42C568F9300814E41 /* AskVC.swift */; };
 		494EBEBA2C568F9500814E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494EBEB92C568F9500814E41 /* Assets.xcassets */; };
 		494EBEBD2C568F9500814E41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 494EBEBC2C568F9500814E41 /* Base */; };
+		494EBEC62C56905C00814E41 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 494EBEC52C56905C00814E41 /* GoogleGenerativeAI */; };
+		494EBECA2C5690BC00814E41 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 494EBEC92C5690BC00814E41 /* GenerativeAI-Info.plist */; };
+		494EBECC2C56910F00814E41 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBECB2C56910F00814E41 /* APIKey.swift */; };
+		494EBECF2C56918300814E41 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 494EBECE2C56918300814E41 /* SnapKit */; };
+		494EBED12C56918300814E41 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 494EBED02C56918300814E41 /* SnapKit-Dynamic */; };
+		494EBED32C569B1900814E41 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494EBED22C569B1900814E41 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		494EBEAD2C568F9300814E41 /* Cut It Short.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cut It Short.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		494EBEB02C568F9300814E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494EBEB22C568F9300814E41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		494EBEB42C568F9300814E41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		494EBEB72C568F9300814E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		494EBEB42C568F9300814E41 /* AskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskVC.swift; sourceTree = "<group>"; };
 		494EBEB92C568F9500814E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494EBEBC2C568F9500814E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494EBEBE2C568F9500814E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494EBEC92C5690BC00814E41 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		494EBECB2C56910F00814E41 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		494EBED22C569B1900814E41 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494EBEC62C56905C00814E41 /* GoogleGenerativeAI in Frameworks */,
+				494EBECF2C56918300814E41 /* SnapKit in Frameworks */,
+				494EBED12C56918300814E41 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +68,13 @@
 			children = (
 				494EBEB02C568F9300814E41 /* AppDelegate.swift */,
 				494EBEB22C568F9300814E41 /* SceneDelegate.swift */,
-				494EBEB42C568F9300814E41 /* ViewController.swift */,
-				494EBEB62C568F9300814E41 /* Main.storyboard */,
+				494EBEB42C568F9300814E41 /* AskVC.swift */,
 				494EBEB92C568F9500814E41 /* Assets.xcassets */,
 				494EBEBB2C568F9500814E41 /* LaunchScreen.storyboard */,
 				494EBEBE2C568F9500814E41 /* Info.plist */,
+				494EBEC92C5690BC00814E41 /* GenerativeAI-Info.plist */,
+				494EBECB2C56910F00814E41 /* APIKey.swift */,
+				494EBED22C569B1900814E41 /* NetworkManager.swift */,
 			);
 			path = "Cut It Short";
 			sourceTree = "<group>";
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = "Cut It Short";
+			packageProductDependencies = (
+				494EBEC52C56905C00814E41 /* GoogleGenerativeAI */,
+				494EBECE2C56918300814E41 /* SnapKit */,
+				494EBED02C56918300814E41 /* SnapKit-Dynamic */,
+			);
 			productName = "Cut It Short";
 			productReference = 494EBEAD2C568F9300814E41 /* Cut It Short.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 494EBEA42C568F9300814E41;
+			packageReferences = (
+				494EBEC42C56905C00814E41 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				494EBECD2C56918300814E41 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 494EBEAE2C568F9300814E41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +148,7 @@
 			files = (
 				494EBEBA2C568F9500814E41 /* Assets.xcassets in Resources */,
 				494EBEBD2C568F9500814E41 /* Base in Resources */,
-				494EBEB82C568F9300814E41 /* Base in Resources */,
+				494EBECA2C5690BC00814E41 /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494EBEB52C568F9300814E41 /* ViewController.swift in Sources */,
+				494EBEB52C568F9300814E41 /* AskVC.swift in Sources */,
 				494EBEB12C568F9300814E41 /* AppDelegate.swift in Sources */,
+				494EBED32C569B1900814E41 /* NetworkManager.swift in Sources */,
+				494EBECC2C56910F00814E41 /* APIKey.swift in Sources */,
 				494EBEB32C568F9300814E41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +170,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		494EBEB62C568F9300814E41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				494EBEB72C568F9300814E41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		494EBEBB2C568F9500814E41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +312,6 @@
 				INFOPLIST_FILE = "Cut It Short/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +339,6 @@
 				INFOPLIST_FILE = "Cut It Short/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +376,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		494EBEC42C56905C00814E41 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+		494EBECD2C56918300814E41 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		494EBEC52C56905C00814E41 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494EBEC42C56905C00814E41 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		494EBECE2C56918300814E41 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494EBECD2C56918300814E41 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		494EBED02C56918300814E41 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494EBECD2C56918300814E41 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 494EBEA52C568F9300814E41 /* Project object */;
 }
